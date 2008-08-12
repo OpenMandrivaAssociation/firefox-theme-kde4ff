@@ -9,12 +9,12 @@
 
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kde4ff
-Version: 0.10
-Release: %mkrel 3
+Version: 0.14
+Release: %mkrel 1
 License: GPL
 Group: Networking/WWW
 URL: https://addons.mozilla.org/en-US/firefox/addon/7574
-Source: https://addons.mozilla.org/pt-BR/firefox/downloads/file/31103/kde4_+_firefox3-%{version}-fx.jar
+Source: http://kfirefox.googlecode.com/files/kde4-%version.jar
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: firefox = %{ff_epoch}:%{ff_ver}
 Obsoletes: mozilla-firefox-theme-kdeff <= 0.4
@@ -26,7 +26,7 @@ KDE4FF is a KDE4-like theme using Oxygen icons for Mozilla Firefox 3.
 %prep
 # Unfortunately, we have to fix the packaging for this one. :(
 %setup -T -q -c -n %{name}-%{version}
-unzip %{SOURCE0}
+unzip -q %{SOURCE0}
 
 %build
 
