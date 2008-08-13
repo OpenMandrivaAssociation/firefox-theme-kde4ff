@@ -10,7 +10,7 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kde4ff
 Version: 0.14
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPL
 Group: Networking/WWW
 URL: https://addons.mozilla.org/en-US/firefox/addon/7574
@@ -34,7 +34,8 @@ unzip -q %{SOURCE0}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}%{_mozillaextpath}
 
-hash="$(sed -n '/.*em:id="\(.*\)"/{s//\1/p;q}' install.rdf)"
+# this rdf contains 3 em:id sections.
+hash="$(sed -n '/.*em:id="\(kde.*\)"/{s//\1/p;q}' install.rdf)"
 if [ -z "$hash" ]; then
     hash="$(sed -n '/.*em:id>\(.*\)<\/em:id>.*/{s//\1/p;q}' install.rdf)"
 fi
