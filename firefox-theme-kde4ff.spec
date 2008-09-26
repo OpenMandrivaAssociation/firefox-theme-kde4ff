@@ -10,7 +10,7 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kde4ff
 Version: 0.14
-Release: %mkrel 1
+Release: %mkrel 3
 License: GPL
 Group: Networking/WWW
 URL: https://addons.mozilla.org/en-US/firefox/addon/7574
