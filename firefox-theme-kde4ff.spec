@@ -2,7 +2,7 @@
 %define debug_package          %{nil}
 
 %define ff_epoch 0
-%define ff_ver 3.0.3
+%define ff_ver 3.0.4
 
 %define _mozillapath %{_libdir}/firefox-%{ff_ver}
 %define _mozillaextpath %{_mozillapath}/extensions
@@ -10,8 +10,8 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kde4ff
 Version: 0.14
-Release: %mkrel 4
-License: GPL
+Release: %mkrel 5
+License: GPLv3
 Group: Networking/WWW
 URL: https://addons.mozilla.org/en-US/firefox/addon/7574
 Source: http://kfirefox.googlecode.com/files/kde4-%version.jar
