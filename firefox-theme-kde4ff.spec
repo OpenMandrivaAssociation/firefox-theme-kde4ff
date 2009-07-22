@@ -10,13 +10,13 @@
 Summary: KDEFF theme for Mozilla Firefox
 Name: firefox-theme-kde4ff
 Version: 0.14
-Release: %mkrel 11
+Release: %mkrel 12
 License: GPLv3
 Group: Networking/WWW
 URL: https://addons.mozilla.org/en-US/firefox/addon/7574
 Source: http://kfirefox.googlecode.com/files/kde4-%version.jar
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires: firefox = %{ff_epoch}:%{ff_ver}
+Requires: firefox >= %{ff_epoch}:%{ff_ver}
 Obsoletes: mozilla-firefox-theme-kdeff <= 0.4
 Provides: mozilla-firefox-theme-kdeff = %{version}-%{release}
 
