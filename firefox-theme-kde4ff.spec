@@ -15,6 +15,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 Requires: firefox = %{firefox_epoch}:%{firefox_version}
 Obsoletes: mozilla-firefox-theme-kdeff <= 0.4
 Provides: mozilla-firefox-theme-kdeff = %{version}-%{release}
+BuildRequires: firefox-devel
 
 %description
 KDE4FF is a KDE4-like theme using Oxygen icons for Mozilla Firefox 3.
